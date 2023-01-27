@@ -36,7 +36,7 @@
 }
 
 body {
-    background-color: var(--yellow);
+    background-color:$legoyellow;
     background-image: url('images/mainbackground.png');
     font-family: 'Rubik', sans-serif;
     font-size: var(--rootsize);
@@ -59,6 +59,17 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+
+    a {
+        width: 100%;
+        max-width: 250px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
 }
 
 header a {
@@ -104,6 +115,11 @@ nav a {
     display: inline-block;
     text-transform: uppercase;
     transition: ease-in-out .4s;
+
+    &:hover{
+        color: var(--yellow);
+        border-color: var(--yellow);
+    }
 }
 nav a:hover {
     color: var(--yellow);
